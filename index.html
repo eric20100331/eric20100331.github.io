@@ -1,9 +1,110 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>eric的博客</title>
-    </head>
-    <body>
-        <p>哎嘿~我还不知道要写什么~</p>
-    </body>
+  <head>
+    <title>Panda Liu 个人网站</title>
+    <style>
+      /* navigation bar styles */
+      #nav{
+        position:fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index:999;
+      }
+      #nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+      #nav li {
+        padding: 0 15px;
+      }
+      #nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #2e2e2e;
+        font-size:20px;
+      }
+      /* homepage styles */
+      #hero{
+        color:#fff;
+        text-align:center;
+        position: relative;
+        padding: 280px 0;
+        content: '';
+        background-image: url("./img/index-background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      #hero h1 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #000;
+        z-index: 1;
+      }
+      #hero p {
+        font-size: 20px;
+        font-weight: bold; 
+        color: #333;
+        z-index:1;
+      }
+      #hero b{
+        color:#000;
+      }
+      /* content styles */
+      #about {
+        position: relative;
+        min-height: 250px;
+        background-color: #f1f1f1;
+        padding: 100px 0; 
+      }
+      #about h2, #about p{
+        width: 70%;
+        margin: auto;
+        text-align:center;
+        padding: 18px;
+        color: #333;
+      }
+      #friendsite {
+        position: relative;
+        min-height: 250px;
+        background-color: #f1f1f1;
+        padding: 100px 0; 
+      }
+      #friendsite h2, #friendsite p, #friendsite a{
+        width: 70%;
+        margin: auto;
+        text-align:center;
+        padding: 18px;
+        color: #333;
+        text-decoration:none;
+      }
+      #friendsite a:hover{
+        color:#d33;
+        text-decoration:underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- homepage -->
+    <section id="hero">
+      <h1>欢迎来到刘某人的个人网站！</h1>
+      <p>Where: Beijing, China</p>
+      <p>Who: 初中牲</p>
+      <p>Wechat: </p>
+    </section>
+    <nav id="nav">
+      <ul>
+        <li><a href="./index.html">主页</a></li>
+        <li><a href="https://bilibili.com">我的Bilibili</a></li>
+      </ul>
+    </nav>
+    <!-- content -->
+    <section id="friendsite">
+      <h2>友情链接——鸣谢</h2>
+      <p><a href="http://spider-king.site">Spider King 个人网站</a></p>
+    </section>
+    <p style="text-align:center;">CopyRight &copy; 2023 Spider King. All Rights Reserved.</p>
+  </body>
 </html>
